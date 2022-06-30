@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parLocation": {
+      "value": "canadacentral"
+    },
+    "parCompanyPrefix": {
+      "value": "poc"
+    },
+    "parHubNetworkAddressPrefix": {
+      "value": "10.99.0.0/16"
+    },
+    "parSubnets": {
+      "value": [
+        {
+          "name": "AzureBastionSubnet",
+          "ipAddressRange": "10.99.0.0/24"
+        },
+        {
+          "name": "GatewaySubnet",
+          "ipAddressRange": "10.99.254.0/24"
+        },
+        {
+          "name": "FirewallSubnet",
+          "ipAddressRange": "10.99.255.0/24"
+        }
+      ]
+    },
+    "parDnsServerIps": {
+      "value": []
+    },
+    "parPublicIpSku": {
+      "value": "Standard"
+    },
+    "parAzBastionEnabled": {
+      "value": true
+    },
+    "parAzBastionSku": {
+      "value": "Standard"
+    },
+    "parDdosEnabled": {
+      "value": false
+    },
+    "parAzFirewallEnabled": {
+      "value": false
+    },
+    "parAzFirewallTier": {
+      "value": "Standard"
+    },
+    "parAzFirewallDnsProxyEnabled": {
+      "value": false
+    },
+    "parPrivateDnsZonesEnabled": {
+      "value": false
+    },
+    "parTags": {
+      "value": {
+        "CreatedBy": "castonguayo",
+        "CreationTime": "2022-06-29",
+        "Environment": "POC"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "parLocation": {
+        "value": "canadacentral"
+      },
+      "parTopLevelManagementGroupPrefix": {
+        "value": "poc"
+      },
+      "parPeeredVnetSubscriptionId": {
+        "value": "450978e3-2c7e-4a77-8303-6846668ac2c3"
+      },
+      "parResourceGroupNameForSpokeNetworking":{
+        "value": "rgPOCSpoke"
+      },
+      "parDdosProtectionPlanId": {
+        "value": ""
+      },
+      "parSpokeNetworkName": {
+        "value": "vnet-spoke"
+      },
+      "parSpokeNetworkAddressPrefix": {
+        "value": "10.202.0.0/24"
+      },
+      "parDnsServerIps": {
+        "value": []
+      },
+      "parNextHopIpAddress": {
+        "value": "10.20.255.4"
+      },
+      "parDisableBgpRoutePropagation": {
+        "value": false
+      },      
+      "parSpoketoHubRouteTableName": {
+        "value": "rtb-spoke-to-hub"
+      },
+      "parHubVirtualNetworkId": {
+        "value": "/subscriptions/450978e3-2c7e-4a77-8303-6846668ac2c3/resourceGroups/rgPOCHub/providers/Microsoft.Network/virtualNetworks/poc-hub-canadacentral"
+      },
+      "parAllowSpokeForwardedTraffic": {
+        "value": false
+      },
+      "parAllowHubVPNGatewayTransit": {
+        "value": true
+      },
+      "parTags": {
+        "value": {
+          "CreatedBy": "castonguayo",
+          "CreationTime": "2022-06-30",
+          "Environment": "POC"
+        }
+      },
+      "parTelemetryOptOut": {
+        "value": false
+      }
+    }
+  }
